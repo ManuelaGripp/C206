@@ -1,2 +1,2 @@
 # C206
-### Códigos das aulas de C206
+### Códigos das aulas de C206 - POO
