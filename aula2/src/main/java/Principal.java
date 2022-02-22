@@ -1,30 +1,28 @@
 public class Principal {
 
     public static void main(String[] args) {
-        Conta c1 = new Conta();
-        Conta c2 = new Conta();
 
-        c1.saldo = 700;
-        c1.limite = 100;
-        c1.nomeDoDono = "Capiroto";
+   /* Conta c1 = new Conta();
+    Conta c2 = new Conta();
+    c1.saldo = 50;
+    c2.saldo = 100;
 
-        c2.saldo = 700;
-        c2.limite = 100;
-        c2.nomeDoDono = "Capiroto";
+    //Transferencia
 
-        //Mesmo que eles tenham os mesmos membros eles referenciam
-        //epacos diferentes na memoria c1 != c2
+        c2.transferencia(20, c1);
 
-        /*System.out.println("O saldo eh " + c1.saldo +
-                " nome do dono eh " + c1.nomeDoDono
-        );
+        System.out.println("Saldo C1: " + c1.saldo);
+        System.out.println("Saldo C2: " + c2.saldo);*/
 
-        c1.sacar(300);
+        Zumbi z1 = new Zumbi();
+        Zumbi z2 = new Zumbi();
 
-        System.out.println("Saldo " + c1.saldo );*/
+        z1.vida = 15;
+        z2.vida = 40;
 
+        z2.trasfereVida(z1,20);
 
-
-
+        System.out.println(z1.vida);
+        System.out.println(z2.vida);
     }
 }

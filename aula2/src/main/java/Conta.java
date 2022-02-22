@@ -3,19 +3,21 @@ public class Conta {
     //Membros da class
     double saldo;
     double limite;
-    int numero;
-    String nomeDoDono;
 
     //Metodos
 
-    void sacar( double quantia ){
+    void sacar(double quantia) {
         saldo -= quantia;
     }
 
-    void depositar(double quantia){
+    void depositar(double quantia) {
         saldo += quantia;
     }
 
+    void transferencia(double quantia, Conta destino) {
+        this.sacar(quantia);
+        destino.depositar(quantia);
+    }
 
 
 }
