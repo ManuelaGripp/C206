@@ -4,13 +4,13 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Scanner sc =new Scanner(System.in); //Leitura dos dados
+        Scanner sc = new Scanner(System.in); //Leitura dos dados
         Deck deck = new Deck("Manuela");// Instanciando novo deck
 
         boolean flag = true;
         int op;
 
-        while(flag){
+        while (flag) {
 
             System.out.println(" ");
             System.out.println("-------Menu-------");
@@ -21,7 +21,7 @@ public class Main {
             System.out.println("5 - Sair");
             op = sc.nextInt();
 
-            switch (op){
+            switch (op) {
                 case 1: //Adicionando nova carta
                     sc.nextLine();
                     Carta carta = new Carta();
@@ -59,11 +59,6 @@ public class Main {
                     System.out.println("Opcao Invalida");
                     break;
             }
-
-
         }
-
-
-
     }
 }
