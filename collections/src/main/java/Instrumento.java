@@ -1,15 +1,27 @@
 public abstract class Instrumento implements Comparable<Instrumento> {
 
     String nome;
-    int preco;
+    double preco;
 
-    public Instrumento(String nome, int preco) {
-        this.nome = nome;
-        this.preco = preco;
-    }
 
     @Override
     public int compareTo(Instrumento o) {
-        return Integer.compare(this.preco,o.preco);
+        return Double.compare(this.preco,o.preco);
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
     }
 }
